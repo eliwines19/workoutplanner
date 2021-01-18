@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Workout Planner</title>
+
+        <script type="application/javascript" src="src/index.js" charset="UTF-8"></script>
+        <script type="application/javascript" src="src/classes/workout.js" charset="UTF-8"></script>
+        <script type="application/javascript" src="src/classes/workouts.js" charset="UTF-8"></script>
+        <script type="application/javascript" src="src/classes/exercise.js" charset="UTF-8"></script>
+        <script type="application/javascript" src="src/classes/exercises.js" charset="UTF-8"></script>
+        <script type="application/javascript" src="src/classes/app.js" charset="UTF-8"></script>
+        <script type="application/javascript" src="src/fetchRequests/workoutFetchRequest.js" charset="UTF-8"></script>
+        <script type="application/javascript" src="src/fetchRequests/exerciseFetchRequest.js" charset="UTF-8"></script>
+
+        <link rel="stylesheet" type="text/css" href="styles/index.css">
+    </head>
+    <body>
+
+        <header>
+            <h2 class="title" id="main-title" name="main-title">Workout Planner</h2>
+        </header>
+
+        <main>
+            <nav class="topnav" id="topnav">
+                <button class="nav-btn" id="new-workout-button" type="button" name="button">Create New Workout</button>
+                <button class="nav-btn" id="new-exercise-button" type="button" name="button">Create New Exercise</button>
+            </nav>
+
+            <div class="forms">
+                <div class="form" id="workout-form" style="display:none">
+                    <h2>New Workout Form</h2>
+                    <form id="new-workout-form" name="workout-form">
+                        <label>Name of Workout: </label>
+                        <input type="text" name="workout-name" placeholder="Workout Title"><br>
+                        <label>Select 5 Exercises:</label><br>
+                        <select class="select"><option disabled selected value>-select exercises-</option></select><br>
+                        <select class="select"><option disabled selected value>-select exercises-</option></select><br>
+                        <select class="select"><option disabled selected value>-select exercises-</option></select><br>
+                        <select class="select"><option disabled selected value>-select exercises-</option></select><br>
+                        <select class="select"><option disabled selected value>-select exercises-</option></select><br>
+
+                        <input id="workout-form-submit" type="submit" placeholder="Add Workout">
+                        <br>
+                    </form>
+                </div>
+
+                <div class="form" id="exercise-form" style="display:none">
+                    <h2>New Exercise Form</h2>
+                    <form id="new-exercise-form" name="exercise-form">
+                        <label for="exercise-name">Exercise Name: </label>
+                        <input type="text" name="exercise-name" placeholder="e.g. 'push-up'"><br>
+
+                        <label for="exercise-muscle-group">Muscle Group: </label>
+                        <input type="text" name="exercise-muscle-group" placeholder="e.g. 'biceps'"><br>
+
+                        <label for="exercise-reps">Reps:</label>
+                        <input type="text" name="exercise-reps" placeholder="e.g. '10 reps'"><br>
+
+                        <label for="exercise-instructions">Exercise Instructions: </label><br>
+                        <textarea type="text" name="exercise-instructions" rows="10" placeholder="Instructions..."></textarea><br>
+
+                        <input id="exercise-form-submit" type="submit" value="Add Exercise">
+                        <br>
+                    </form>
+                </div>
+            </div>
+                
+            <div class="card-container" id="card-container"></div><br>
+
+        </main>
+
+    </body>
+</html>

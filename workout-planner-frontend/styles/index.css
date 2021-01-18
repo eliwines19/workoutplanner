@@ -1,0 +1,118 @@
+body {
+    text-align: center;
+}
+
+.card {
+    border-style: groove;
+    background-color: rgb(255, 255, 255);
+    transition: 0.7s;
+    width: 40%;
+    margin: 5px 5px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: default;
+}
+
+.card:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 50%;
+}
+
+.card button {
+    float: left;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.card button:hover {
+    cursor: pointer;
+}
+
+#main-title {
+    font-size: 80px;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.2em;
+}
+
+#card-container {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#topnav {
+    padding: 10px;
+}
+
+#topnav button {
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.5s
+}
+
+#topnav button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#topnav button:disabled {
+    opacity: 50%;
+    cursor: default;
+}
+
+.card h2 {
+    background-color: rgb(155, 155, 155);
+    margin: 10px 80px;
+    border-radius: 10px;
+    border-style: double;
+}
+
+.workout-exercises {
+    margin: 0px 100px 0px 100px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+.info-card {
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 5px;
+    font-size: 12px;
+    list-style-type: none;
+    text-align: left;
+    padding: 10px 10px;
+    transition: 0.09s
+}
+
+.info-card:hover {
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.info-card li {
+    padding: 2px;
+}
+
+.form {
+    transition: 0.5s;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin: 10px 300px;
+}
+
+.form:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
