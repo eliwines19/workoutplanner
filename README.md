@@ -7,4 +7,3 @@ Once an exercise is created, it will be added to the lists located in the workou
 Once a workout is created, that workout will be added to the DOM (the web page).
 
 Feel free to create as many exercises and workouts as you like!# workoutplanner
-# workoutplanner
